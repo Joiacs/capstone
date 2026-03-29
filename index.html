@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>P21 – Liquid Biopsy Coating Adherence Testing Setup</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f9;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      background: #ffffff;
+      border-bottom: 4px solid #c8102e;
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header img {
+      height: 72px;
+      width: auto;
+    }
+
+    header .header-text h1 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #c8102e;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    header .header-text h2 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-top: 4px;
+      line-height: 1.3;
+    }
+
+    main {
+      width: 100%;
+      max-width: 860px;
+      padding: 48px 24px 64px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 36px 40px;
+    }
+
+    .card h3 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #c8102e;
+      margin-bottom: 16px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #333;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 4px;
+    }
+
+    .member {
+      background: #f8f9fb;
+      border: 1px solid #e4e7ec;
+      border-radius: 8px;
+      padding: 20px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .member .name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #1a1a1a;
+    }
+
+    .member .id {
+      font-size: 0.78rem;
+      color: #888;
+    }
+
+    .member a {
+      font-size: 0.82rem;
+      color: #c8102e;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .member a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 0.78rem;
+      color: #aaa;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="media/McGill_University_CoA.svg" alt="McGill University Logo" />
+    <div class="header-text">
+      <h1>MECH 463 &mdash; Capstone Design &middot; Group I</h1>
+      <h2>P21: Development of a Testing Setup to Assess Coating Adherence<br>of a New Liquid Biopsy Device</h2>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="card">
+      <h3>Abstract</h3>
+      <p>
+        This project develops a biomechanical testing platform to evaluate the coating adherence
+        of a new liquid biopsy device under realistic clinical conditions. A physiologically accurate
+        phantom pelvis&mdash;comprising synthetic uterus, cervix, and vagina&mdash;is fabricated
+        via multi-material 3D bioprinting using elastomeric and hydrogel polymers to replicate the
+        surface texture and compliance of biological tissue. MRI segmentation (ITK-Snap / 3D Slicer)
+        is used to derive anatomically faithful organ geometry from DICOM imaging data. The setup
+        measures normal force, torque, and friction coefficient across repeated insertion cycles,
+        with a repeatability target of CV &le; 10%, enabling systematic, in-vitro screening of
+        device coatings prior to clinical validation.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Team Members</h3>
+      <div class="team-grid">
+
+        <div class="member">
+          <span class="name">Elias Abd-El-Nour</span>
+          <span class="id">261113385</span>
+          <a href="mailto:elias.abd-el-nour@mail.mcgill.ca">elias.abd-el-nour@mail.mcgill.ca</a>
+        </div>
+
+        <div class="member">
+          <span class="name">Joseph Iacono</span>
+          <span class="id">261116085</span>
+          <a href="mailto:joseph.iacono@mail.mcgill.ca">joseph.iacono2@mail.mcgill.ca</a>
+        </div>
+
+        <div class="member">
+          <span class="name">Jason Wong</span>
+          <span class="id">261112174</span>
+          <a href="mailto:jason.wong@mail.mcgill.ca">jason.wong4@mail.mcgill.ca</a>
+        </div>
+
+        <div class="member">
+          <span class="name">Joe Matar</span>
+          <span class="id">261104974</span>
+          <a href="mailto:joe.matar@mail.mcgill.ca">joe-najm.matar@mail.mcgill.ca</a>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    McGill University &mdash; Faculty of Engineering &mdash; MECH 463D1 &mdash; 2025&ndash;2026
+  </footer>
+
+</body>
+</html>
