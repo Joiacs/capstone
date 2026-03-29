@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code – P21 Capstone</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      gap: 28px;
+      padding: 40px 24px;
+    }
+
+    img.logo {
+      height: 64px;
+      width: auto;
+    }
+
+    .label {
+      text-align: center;
+    }
+
+    .label h1 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #c8102e;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .label p {
+      margin-top: 6px;
+      font-size: 0.85rem;
+      color: #555;
+      max-width: 280px;
+      line-height: 1.5;
+    }
+
+    #qr-img {
+      border: 1px solid #e4e7ec;
+      border-radius: 8px;
+      padding: 16px;
+      background: #fff;
+      width: 280px;
+      height: 280px;
+    }
+
+    .url {
+      font-size: 0.72rem;
+      color: #aaa;
+      word-break: break-all;
+      text-align: center;
+      max-width: 320px;
+    }
+
+    .print-btn {
+      margin-top: 8px;
+      padding: 10px 28px;
+      background: #c8102e;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+    }
+
+    .print-btn:hover { background: #a50d26; }
+
+    @media print {
+      .print-btn { display: none; }
+      body { justify-content: flex-start; padding-top: 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <img class="logo" src="media/McGill_University_CoA.svg" alt="McGill University Logo" />
+
+  <div class="label">
+    <h1>MECH 463 &mdash; Group I</h1>
+    <p>Scan to visit the P21 Capstone project page</p>
+  </div>
+
+  <img
+    id="qr-img"
+    src="https://api.qrserver.com/v1/create-qr-code/?size=280x280&margin=10&data=https%3A%2F%2Fcapstone-kappa-gules.vercel.app%2F"
+    alt="QR Code"
+  />
+
+  <p class="url">https://capstone-kappa-gules.vercel.app/</p>
+
+  <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+
+</body>
+</html>
